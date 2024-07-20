@@ -82,8 +82,9 @@
 }
 
 #social-media img {
-    width: 2.5rem;
+    width: 3.3rem;
     transition: 0.3s;
+    padding: .3rem;
 }
 
 #social-media img:hover {
