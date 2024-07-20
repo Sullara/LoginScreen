@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Screen</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- fontawesome-icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main id="container">
+        <form id="login-form">
+
+            <!-- header -->
+            <div id="form-header">
+                <h1>Login</h1>
+
+                <!-- dark/light button -->
+                <i id="mode-icon" class="fa-solid fa-moon"></i>
+            </div>
+
+            <!-- login with social media -->
+            <div id="social-media">
+                <a href="#">
+                    <img src="./assets/facebook-svgrepo-com.svg" alt="login com o facebook">
+                </a>
+
+                <a href="#">
+                    <img src="./assets/google-color-svgrepo-com.svg" alt="login com o google">
+                </a>
+
+                <a href="#">
+                    <img src="./assets/github-142-svgrepo-com.svg" alt="login com o github">
+                </a>
+            </div>
+
+            <div id="inputs">
+
+                <!-- name box -->
+                <div class="input-box">
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+
+                        <input type="text" id="name" name="name" placeholder="User">
+                    </div>
+
+                </div>
+
+                <!-- email box -->
+                <div class="input-box">
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <input type="email" id="email" name="email" placeholder="E-mail">
+                    </div>
+
+                </div>
+
+                <!-- password box -->
+                <div class="input-box">
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-key"></i>
+
+                        <input type="password" id="password" name="password" placeholder="Password">
+                    </div>
+
+                    <!-- forgot passord option -->
+                    <div id="forgot-password">
+                        <a href="#">
+                            Forgot your password?
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- login button -->
+            <button type="submit" id="login-btn">
+                Login
+            </button>
+        </form>
+    </main>
+
+    <!-- javascript -->
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
