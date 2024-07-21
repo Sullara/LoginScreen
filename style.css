@@ -9,11 +9,17 @@
     --color-dark-100: #312d37;
     --color-dark-900: #000;
 
-    --color-purple-50: #7c3aed;
-    --color-purple-100: #a855f7;
-    --color-purple-200: #bf46ef;
+    --color-blue-50: #04e0ba;
+    --color-blue-100: #05aecb;
+    --color-blue-200: #0181da;
 
-    --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-100), var(--color-purple-200));
+    --color-green-50: #11acb0;
+    --color-green-100: #225e7a;
+    --color-green-200: #330f42;
+
+    --color-gradient-light: linear-gradient(90deg, var(--color-blue-50), var(--color-blue-100), var(--color-blue-100), var(--color-blue-200));
+
+    --color-gradient-dark: linear-gradient(90deg, var(--color-green-50), var(--color-green-100), var(--color-green-100), var(--color-green-200));
 }
 
 /* reset */
@@ -63,7 +69,7 @@
     position: absolute;
     content: '';
     width: 40%;
-    background-color: var(--color-purple-50);
+    background-color: var(--color-blue-50);
     height: 3px;
     bottom: 10px;
     border-radius: 5px;
@@ -105,7 +111,7 @@
     align-items: center;
     gap: 1rem;
     cursor: text;
-    border-bottom: 1px solid var(--color-purple-50);
+    border-bottom: 1px solid var(--color-blue-50);
 }
 
 .input-field i {
@@ -133,13 +139,13 @@
 }
 
 #forgot-password a:hover {
-    color: var(--color-purple-50);
+    color: var(--color-blue-50);
 }
 
 /* login button */
 #login-btn {
     border: none;
-    background: var(--color-gradient);
+    background: var(--color-gradient-light);
     color: var(--color-light-50);
     padding: .5rem;
     border-radius: .5rem;
@@ -163,6 +169,18 @@
 .dark#login-form .input-field input,
 .dark#login-form .input-field i {
     color: var(--color-light-50);
+}
+
+.dark#login-form #login-btn {
+    background: var(--color-gradient-dark);
+}
+
+.dark#login-form .input-field {
+    border-bottom: 1px solid var(--color-green-50);
+}
+
+.dark#login-form #form-header h1::before {
+    background-color: var(--color-green-50);
 }
 
 /* Dark mode animation */
