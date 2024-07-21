@@ -115,8 +115,8 @@
 }
 
 .input-field i {
-    font-size: 1.2rem;
     color: var(--color-dark-900);
+    font-size: 1.3rem;
 }
 
 .input-field input {
@@ -204,7 +204,7 @@
     }
 }
 
-@media (width < 25rem) {
+@media (width < 27em) {
     html {
         font-size: 80%;
     }

@@ -1,3 +1,5 @@
+//Dark mode
+
 const mode = document.getElementById('mode-icon');
 const video = document.getElementById('lightmode-video');
 
@@ -20,3 +22,17 @@ mode.addEventListener('click', () => {
     video.setAttribute('src', './assets/Light mode clouds.mp4');
     
 });
+
+//Form Validation
+
+function login() {
+    var user = document.getElementById('user').value;
+    var password = document.getElementById('password').value;
+
+    if(user == "admin" && password == "adminpass") {
+        alert('Success!');
+    } else {
+        alert("Invalid Credentials!");
+    }
+
+}
