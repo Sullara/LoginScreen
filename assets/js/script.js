@@ -1,11 +1,11 @@
 //Dark mode
 
 const mode = document.getElementById('mode-icon');
-const video = document.getElementById('lightmode-video');
+const video = document.getElementById('background-video');
+const form = document.getElementById('login-form');
 
 mode.addEventListener('click', () => {
-    const form = document.getElementById('login-form');
-
+    
     if(mode.classList.contains('fa-moon')) {
         mode.classList.remove('fa-moon');
         mode.classList.add('fa-sun');
